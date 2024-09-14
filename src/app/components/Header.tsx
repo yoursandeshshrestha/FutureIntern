@@ -3,8 +3,8 @@ import Link from "next/link";
 export default async function Header() {
   return (
     <header>
-      <div className="container flex items-center justify-between mx-auto my-4">
-        <Link href={"/"} className="font-semibold text-2xl ">
+      <div className="flex items-center justify-between mx-auto">
+        <Link href={"/"} className="font-semibold text-3xl ">
           Future Intern
         </Link>
         <nav className="flex gap-2 *:px-4 *:rounded-md *:py-2">

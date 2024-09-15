@@ -1,11 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 export default function JobRow() {
   return (
     <>
       <div className="bg-white p-4 rounded-md shadow-sm flex gap-4 relative">
-        <div className="absolute top-2 right-4">
-          <i className="fa-regular fa-heart"></i>
+        <div className="absolute top-4 right-4">
+          <FontAwesomeIcon
+            className="size-4 cursor-pointer text-gray-500"
+            icon={faHeart}
+          />
         </div>
         <div className="content-center ">
           <img

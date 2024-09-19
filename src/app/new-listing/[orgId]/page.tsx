@@ -1,5 +1,6 @@
 import { getUser } from "@workos-inc/authkit-nextjs";
 import { WorkOS } from "@workos-inc/node";
+import JobForm from "@/app/components/JobForm";
 
 type PageProps = {
   params: {
@@ -22,9 +23,5 @@ export default async function NewListingForOrgPage(props: PageProps) {
   if (!hasAccess) {
     return "no access";
   }
-  return (
-    <form action="" className="container">
-      new job form here
-    </form>
-  );
+  return <JobForm />;
 }
